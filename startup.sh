@@ -7,7 +7,7 @@ if [ -f /etc/configured ]; then
         echo 'already configured'
         service kolibri start
 else
-        chown -R kolibri:nogroup /var/ka-lite/.kalite
+        chown -R kolibri:nogroup /var/kolibri/.kolibri
         service kolibri start
         update-locale
         date > /etc/configured
