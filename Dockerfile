@@ -23,7 +23,6 @@ COPY startup.sh /etc/my_init.d/startup.sh
 RUN chmod +x /etc/my_init.d/startup.sh
 
 VOLUME /var/kolibri/.kolibri/content
-VOLUME /var/kolibri/.kolibri/database
 
 #expose port for https service
 EXPOSE 8080
