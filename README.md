@@ -1,7 +1,7 @@
 # docker-kolibri
 docker container for Kolibri
 
-"Kolibri makes high quality education technology available in low-resource communities such as rural schools, refugee camps, orphanages, non-formal school systems, and prison systems."
+"[Kolibri][1] makes high quality education technology available in low-resource communities such as rural schools, refugee camps, orphanages, non-formal school systems, and prison systems."
 
 
 ## Install dependencies
