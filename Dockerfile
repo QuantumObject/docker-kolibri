@@ -1,5 +1,5 @@
 #name of container: docker-kolibri
-#versison of container: 2.1
+#versison of container: 2.2
 
 FROM quantumobject/docker-baseimage:18.04
 MAINTAINER Angel Rodriguez  "angel@quantumobject.com"
