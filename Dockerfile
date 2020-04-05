@@ -1,5 +1,5 @@
 #name of container: docker-kolibri
-#versison of container: 2.2
+#versison of container: 2.3
 
 FROM quantumobject/docker-baseimage:18.04
 MAINTAINER Angel Rodriguez  "angel@quantumobject.com"
@@ -10,7 +10,7 @@ RUN  export USER=kolibri
 # Installation of nesesary package/software for this containers...
 RUN echo "deb http://ppa.launchpad.net/learningequality/kolibri/ubuntu `cat /etc/container_environment/DISTRIB_CODENAME` main " >> /etc/apt/sources.list \
     && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys DC5BAA93F9E4AE4F0411F97C74F88ADB3194DD81
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y -q  net-tools kolibri \
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y -q  --no-install-recommends net-tools kolibri \
                       && apt-get clean \
                       && rm -rf /tmp/* /var/tmp/*  \
                       && rm -rf /var/lib/apt/lists/*
